@@ -20,10 +20,56 @@ body {
     background-attachment: fixed;
 }
 
+header {
+    
+}
+
+span#icon {
+    display: inline-block;
+    background-color: lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+span#icon:hover {
+    background-color: black;
+    color: white;
+}
+
+header menu {
+    display: none;
+}
+
+menu li {
+    display: inline-block;
+}
+
+menu.redes-sociais img{
+    width: 50px;
+    margin: 20px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box;
+}
+
+menu.redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.616);
+    transform: translate(10px, 0px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.5s, border 0.3s;
+}
+
+ul {
+    list-style-type: none;
+}
+
 main {
     height: 100vh;
     position: relative;
 }
+
 
 section#telefone {
     height: 627px;
@@ -44,23 +90,4 @@ iframe#tela {
     left: 23.5px;
     height: 470px;
     width: 265.5px;
-}
-
-section#redes-sociais {
-    text-align: right;
-}
-
-section#redes-sociais img{
-    width: 50px;
-    margin: 20px;
-    border-radius: 100%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
-    box-sizing: border-box;
-}
-
-section#redes-sociais img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.616);
-    transform: translate(-10px, 0px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-    transition: transform 0.5s, border 0.3s;
 }

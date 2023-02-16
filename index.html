@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas redes sociais</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <header>
+        <span id="icon" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens" class="redes-sociais">
+            <ul>
+                <li><a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="Home"></a></li>
+                <li><a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt="Twitter"></a></li>
+                <li><a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt="Youtube"></a></li>
+                <li><a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="GitHub"></a></li>
+            </ul>
+        </menu>
+    </header>
+
     <main>
         <section id="telefone">
             <iframe src="home.html" name="tela" id="tela" frameborder="0">
                 Seu navegador não é compatível com isso
             </iframe>
         </section>
-        <section id="redes-sociais">
-            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="Home"></a><br>
-            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="Instagram"></a><br>
-            <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt="Facebook"></a><br>
-            <a href="twitter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt="Twitter"></a><br>
-            <a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt="Youtube"></a><br>
-            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="GitHub"></a>
-        </section>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
